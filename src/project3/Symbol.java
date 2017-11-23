@@ -1,11 +1,13 @@
 package project3;
 
+import java.util.*;
+
 public class Symbol {
 	
 	private int id;
 	private String name;
-   private boolean isTerminal;
-   private Token ref;
+ 	private boolean isTerminal;
+	private Token ref;
 	
 	public Symbol(int id, String name, boolean t) {
 		this.id = id;
