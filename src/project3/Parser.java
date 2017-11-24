@@ -362,9 +362,11 @@ public class Parser {
          else {
             // Get the rule # from the LLtable
             int topIndex = front.peek().getSymbol().getId();
+            //System.out.println("----->"+topIndex);
             System.out.println(input[index].getName());
             
             int frontIndex = tokenIndexMap.get(input[index].getName());
+            System.out.println("--->"+frontIndex+"----"+topIndex);
             int rule = LLTable[topIndex][frontIndex];
             
             // UNIT TEST: M4 print out rule
